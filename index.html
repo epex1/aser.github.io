@@ -3,148 +3,415 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ASER IS - Mobile App Development Company" />
-  <title>ASER IS | App Development Company</title>
+  <meta name="description" content="ASER IS — Premium Mobile App Development Studio. Flutter, Firebase, Android & iOS." />
+  <title>ASER IS | Mobile App Development Studio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-      color: white;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      background: rgba(0,0,0,0.5);
-      backdrop-filter: blur(10px);
-      position: sticky;
-      top: 0;
-    }
-
-    header h1 {
-      font-size: 20px;
-      color: #00d4ff;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 15px;
-      text-decoration: none;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h2 {
-      font-size: 45px;
-      color: #00d4ff;
-    }
-
-    .hero p {
-      font-size: 18px;
-      opacity: 0.8;
-    }
-
-    .btn {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #00d4ff;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.05);
-      margin: 15px auto;
-      padding: 20px;
-      max-width: 500px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: rgba(0,0,0,0.6);
-    }
-
-    .highlight {
-      color: #00d4ff;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Figtree:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>ASER IS</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#apps">Apps</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <header id="header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="ASER IS home">
+        <span class="logo-mark">A</span>
+        <span class="logo-text">SER IS</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#apps" class="nav-link">Work</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="#contact" class="nav-cta">Start a Project</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
 
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+    <nav>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#apps" class="mobile-nav-link">Work</a>
+      <a href="#process" class="mobile-nav-link">Process</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+    <a href="#contact" class="mobile-cta">Start a Project</a>
+  </div>
+
   <section class="hero">
-    <h2>We Build Mobile Apps</h2>
-    <p>ASER IS is a mobile app development company specializing in modern, fast, and scalable applications.</p>
-    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-      Contact Us
-    </button>
+    <div class="hero-content">
+      <div class="hero-label">
+        <span class="label-line" aria-hidden="true"></span>
+        <span>Mobile App Studio</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">We craft</span>
+        <span class="title-line title-accent">mobile apps</span>
+        <span class="title-line">that matter.</span>
+      </h1>
+      <p class="hero-sub">
+        From concept to App Store — ASER IS builds fast, scalable, and beautifully designed applications for Android and iOS.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Start a Project</a>
+        <a href="#apps" class="btn-ghost">View Our Work</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-phone floating">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="screen-header">
+            <div class="screen-avatar"></div>
+            <div class="screen-lines">
+              <div class="screen-line long"></div>
+              <div class="screen-line short"></div>
+            </div>
+          </div>
+          <div class="screen-chart">
+            <div class="chart-bar" style="height:42%"></div>
+            <div class="chart-bar" style="height:68%"></div>
+            <div class="chart-bar" style="height:54%"></div>
+            <div class="chart-bar active" style="height:87%"></div>
+            <div class="chart-bar" style="height:61%"></div>
+          </div>
+          <div class="screen-stat">
+            <div class="screen-stat-num">+24.7%</div>
+            <div class="screen-stat-label">Monthly growth</div>
+          </div>
+          <div class="screen-cards">
+            <div class="screen-card"></div>
+            <div class="screen-card"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-badge badge-top">
+        <span class="badge-val">47+</span>
+        <span class="badge-sub">Apps Delivered</span>
+      </div>
+      <div class="hero-badge badge-btm">
+        <span class="badge-val">3.2M</span>
+        <span class="badge-sub">Active Users</span>
+      </div>
+    </div>
   </section>
 
-  <section id="services" class="section">
-    <h2 class="highlight">Our Services</h2>
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-big"><span class="count" data-target="47">0</span><em>+</em></span>
+        <span class="stat-caption">Apps launched on Android &amp; iOS</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item">
+        <span class="stat-big"><span class="count-float" data-target="3.2">0</span><em>M</em></span>
+        <span class="stat-caption">Users across client platforms</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item">
+        <span class="stat-big"><span class="count" data-target="98">0</span><em>%</em></span>
+        <span class="stat-caption">Client satisfaction rate</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item">
+        <span class="stat-big"><span class="count" data-target="5">0</span><em>yr</em></span>
+        <span class="stat-caption">Mobile development experience</span>
+      </div>
+    </div>
+  </div>
 
-    <div class="card">
-      <h3>📱 Mobile App Development</h3>
-      <p>We build Android & iOS apps using Flutter and modern technologies.</p>
+  <section id="services" class="section services-section">
+    <div class="section-header reveal-up">
+      <span class="section-label">
+        <span class="label-line" aria-hidden="true"></span>What we do
+      </span>
+      <h2 class="section-title">Services built<br><em>for scale</em></h2>
     </div>
 
-    <div class="card">
-      <h3>⚙️ Backend Systems</h3>
-      <p>Firebase, APIs, databases, and cloud systems for your apps.</p>
-    </div>
+    <div class="services-grid">
+      <div class="service-card service-featured reveal-up">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="5" y="2" width="14" height="20" rx="2"/>
+            <circle cx="12" cy="17" r="1" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Mobile App Development</h3>
+        <p class="service-desc">Native and cross-platform apps built with Flutter. Performance-first architecture that scales from launch day to millions of users — without compromises.</p>
+        <div class="service-tags">
+          <span>Flutter</span>
+          <span>Android</span>
+          <span>iOS</span>
+          <span>Dart</span>
+        </div>
+        <div class="service-arrow" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7,7 17,7 17,17"/>
+          </svg>
+        </div>
+      </div>
 
-    <div class="card">
-      <h3>🎨 UI/UX Design</h3>
-      <p>Clean, modern and user-friendly interfaces for better experience.</p>
+      <div class="service-card reveal-up" style="--delay:.1s">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Backend &amp; API Systems</h3>
+        <p class="service-desc">Firebase, cloud functions, REST and GraphQL APIs. Scalable infrastructure engineered to keep your app responsive under any load.</p>
+        <div class="service-tags">
+          <span>Firebase</span>
+          <span>REST</span>
+          <span>Cloud</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal-up" style="--delay:.2s">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3 class="service-name">UI/UX Design</h3>
+        <p class="service-desc">Interfaces that feel intuitive from the first tap. We obsess over typography, micro-interactions, and pixel-perfect execution in every screen.</p>
+        <div class="service-tags">
+          <span>Figma</span>
+          <span>Prototyping</span>
+          <span>Design Systems</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="apps" class="section">
-    <h2 class="highlight">Our Apps</h2>
+  <section id="apps" class="section work-section">
+    <div class="section-header reveal-up">
+      <span class="section-label">
+        <span class="label-line" aria-hidden="true"></span>Our Work
+      </span>
+      <h2 class="section-title">Apps we've<br><em>shipped</em></h2>
+    </div>
 
-    <div class="card">
-      <h3>Dinar App</h3>
-      <p>Finance and trading management application.</p>
+    <div class="work-list">
+      <div class="work-card reveal-up">
+        <div class="work-visual">
+          <div class="work-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <div class="work-glow" aria-hidden="true"></div>
+        </div>
+        <div class="work-body">
+          <span class="work-category">Finance &amp; Trading</span>
+          <h3 class="work-title">Dinar App</h3>
+          <p class="work-desc">A comprehensive finance and trading management application. Real-time market data, portfolio tracking, and transaction history — built for clarity under the complexity of live trading.</p>
+          <div class="work-stack">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Trading API</span>
+            <span>Real-time Data</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-more reveal-up" style="--delay:.15s">
+        <div class="work-more-inner">
+          <span class="work-more-label">More coming soon</span>
+          <p>We're currently building exciting new applications. <a href="#contact">Reach out</a> to discuss your project.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <h2 class="highlight">Contact Us</h2>
+  <section id="process" class="section process-section">
+    <div class="section-header reveal-up">
+      <span class="section-label">
+        <span class="label-line" aria-hidden="true"></span>How we work
+      </span>
+      <h2 class="section-title">Our process,<br><em>refined</em></h2>
+    </div>
 
-    <div class="card">
-      <p>Email: <b>aser.is@zohomail.com</b></p>
-      <p>Company: <b>ASER IS</b></p>
+    <div class="process-grid">
+      <div class="process-step reveal-up">
+        <span class="step-num" aria-hidden="true">01</span>
+        <div class="step-body">
+          <h3 class="step-title">Discovery &amp; Strategy</h3>
+          <p class="step-desc">We start by understanding your users, market, and goals. A clear strategy eliminates costly pivots and sets the foundation for a product people actually want.</p>
+        </div>
+      </div>
+      <div class="process-step reveal-up" style="--delay:.1s">
+        <span class="step-num" aria-hidden="true">02</span>
+        <div class="step-body">
+          <h3 class="step-title">Design &amp; Prototype</h3>
+          <p class="step-desc">High-fidelity designs in Figma before a single line of code is written. You interact with the product first, approve it, then we build.</p>
+        </div>
+      </div>
+      <div class="process-step reveal-up" style="--delay:.2s">
+        <span class="step-num" aria-hidden="true">03</span>
+        <div class="step-body">
+          <h3 class="step-title">Development</h3>
+          <p class="step-desc">Flutter-first engineering with weekly deliverables. You stay informed and in control with regular demos and clear communication throughout the build.</p>
+        </div>
+      </div>
+      <div class="process-step reveal-up" style="--delay:.3s">
+        <span class="step-num" aria-hidden="true">04</span>
+        <div class="step-body">
+          <h3 class="step-title">Launch &amp; Support</h3>
+          <p class="step-desc">App Store submission, production monitoring, and ongoing support. We stay invested in your product's success long after the launch date.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="section-header reveal-up">
+      <span class="section-label">
+        <span class="label-line" aria-hidden="true"></span>Get in touch
+      </span>
+      <h2 class="section-title">Let's build<br><em>something great</em></h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-up">
+        <p class="contact-lead">Have a project in mind? We'd love to hear about it. Fill in the form or reach out directly.</p>
+        <div class="contact-details">
+          <div class="contact-row">
+            <span class="contact-key">Email</span>
+            <a href="mailto:aser.is@zohomail.com" class="contact-val">aser.is@zohomail.com</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-key">Studio</span>
+            <span class="contact-val">ASER IS</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-key">Specialization</span>
+            <span class="contact-val">Flutter · Firebase · Mobile</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-key">Response time</span>
+            <span class="contact-val">Within 24 hours</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-wrap reveal-up" style="--delay:.1s">
+        <form
+          id="contactForm"
+          class="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          novalidate
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <div style="display:none" aria-hidden="true">
+            <input name="bot-field" tabindex="-1" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="project">Project type</label>
+            <div class="select-wrap">
+              <select id="project" name="project">
+                <option value="">Select a project type</option>
+                <option value="mobile-app">Mobile App (Android / iOS)</option>
+                <option value="flutter">Flutter App</option>
+                <option value="backend">Backend / API System</option>
+                <option value="design">UI/UX Design</option>
+                <option value="other">Other</option>
+              </select>
+              <svg class="select-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+                <path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" placeholder="Describe your idea, timeline, and any technical requirements..." rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-submit" id="submitBtn">
+            <span class="btn-label">Send Message</span>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess" hidden>
+          <div class="success-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+          </div>
+          <h3>Message sent.</h3>
+          <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 ASER IS. All rights reserved.</p>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#" class="logo" aria-label="ASER IS home">
+          <span class="logo-mark">A</span>
+          <span class="logo-text">SER IS</span>
+        </a>
+        <p class="footer-tagline">Building the apps that define tomorrow.</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <span class="footer-col-label">Services</span>
+          <a href="#services">Mobile Apps</a>
+          <a href="#services">Backend Systems</a>
+          <a href="#services">UI/UX Design</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-label">Studio</span>
+          <a href="#apps">Our Work</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 ASER IS. All rights reserved.</p>
+      <p class="footer-sig">Built with precision.</p>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
