@@ -1,1 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
 
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #111;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #00c3ff;
+  border: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.card {
+  background: #1a1a1a;
+  margin: 15px auto;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #222;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+}
