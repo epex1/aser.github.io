@@ -3,62 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ammar - Mobile App Developer (Dinar & Debt Ledger)" />
-  <meta name="theme-color" content="#0f0f0f" />
-  <title>Ammar | Developer Portfolio</title>
+  <meta name="description" content="ASER IS - Mobile App Development Company" />
+  <title>ASER IS | App Development Company</title>
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      font-size: 20px;
+      color: #00d4ff;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 45px;
+      color: #00d4ff;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #00d4ff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      margin: 15px auto;
+      padding: 20px;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .highlight {
+      color: #00d4ff;
+    }
+  </style>
 </head>
 
 <body>
 
   <header>
-    <h1>Ammar</h1>
+    <h1>ASER IS</h1>
     <nav>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#apps">Apps</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Hello, I'm Ammar 👋</h2>
-    <p>Mobile App Developer (Flutter / Firebase)</p>
-    <button onclick="scrollToSection('projects')">View My Work</button>
+    <h2>We Build Mobile Apps</h2>
+    <p>ASER IS is a mobile app development company specializing in modern, fast, and scalable applications.</p>
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Contact Us
+    </button>
   </section>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
+  <section id="services" class="section">
+    <h2 class="highlight">Our Services</h2>
+
+    <div class="card">
+      <h3>📱 Mobile App Development</h3>
+      <p>We build Android & iOS apps using Flutter and modern technologies.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Backend Systems</h3>
+      <p>Firebase, APIs, databases, and cloud systems for your apps.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎨 UI/UX Design</h3>
+      <p>Clean, modern and user-friendly interfaces for better experience.</p>
+    </div>
+  </section>
+
+  <section id="apps" class="section">
+    <h2 class="highlight">Our Apps</h2>
 
     <div class="card">
       <h3>Dinar App</h3>
-      <p>Personal finance & trading app.</p>
+      <p>Finance and trading management application.</p>
     </div>
-
-    <div class="card">
-      <h3>Debt Ledger</h3>
-      <p>Simple debt tracking system for users.</p>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I build mobile apps using Flutter and Firebase.
-      I focus on clean UI, performance, and real-world tools.
-    </p>
   </section>
 
   <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: ammar.eawr@gmail.com</p>
+    <h2 class="highlight">Contact Us</h2>
+
+    <div class="card">
+      <p>Email: <b>aser.is@zohomail.com</b></p>
+      <p>Company: <b>ASER IS</b></p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2026 Ammar. All rights reserved.</p>
+    <p>© 2026 ASER IS. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
