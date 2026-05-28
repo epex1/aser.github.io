@@ -1,18 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ammar - Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ammar - Mobile App Developer (Dinar & Debt Ledger)" />
+  <meta name="theme-color" content="#0f0f0f" />
+  <title>Ammar | Developer Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" />
 </head>
 
 <body>
-  <h1>Hi, I'm Ammar 👋</h1>
-  <h2>Mobile App Developer</h2>
 
-  <h3>Projects</h3>
-  <p>Dinar App</p>
-  <p>Debt Ledger App</p>
+  <header>
+    <h1>Ammar</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <h3>Contact</h3>
-  <p>ammar.eawr@gmail.com</p>
+  <section class="hero">
+    <h2>Hello, I'm Ammar 👋</h2>
+    <p>Mobile App Developer (Flutter / Firebase)</p>
+    <button onclick="scrollToSection('projects')">View My Work</button>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Dinar App</h3>
+      <p>Personal finance & trading app.</p>
+    </div>
+
+    <div class="card">
+      <h3>Debt Ledger</h3>
+      <p>Simple debt tracking system for users.</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I build mobile apps using Flutter and Firebase.
+      I focus on clean UI, performance, and real-world tools.
+    </p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: ammar.eawr@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Ammar. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
